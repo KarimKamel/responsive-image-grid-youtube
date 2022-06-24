@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+    .grid-container {
+      border: 2px solid black;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .grid-header1,
+    .grid-header2 {
+      font-family: "Bangers", cursive;
+      color: red;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px #080808;
+      text-align: center;
+    }
+
+    .grid-column {
+      width: 25%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .grid-column > img {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+    @media screen and (max-width: 650px) {
+      .grid-column {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .grid-column {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div class="grid-container">
+      <h1 class="grid-header1">Marvel Characters</h1>
+      <h2 class="grid-header2">Responsive Image grid</h2>
+      <div class="grid">
+        <div class="grid-column">
+          <img src="./images/ant-man.jpg" alt="" />
+          <img src="./images/doctor-strange.jpg" alt="" />
+          <img src="./images/black-panther.jpg" alt="" />
+          <img src="./images/black-widow.jpg" alt="" srcset="" />
+        </div>
+        <div class="grid-column">
+          <img src="./images/captain-america.jpg" alt="" />
+          <img src="./images/captain-marvel.jpg" alt="" />
+          <img src="./images/arrow.jpg" alt="" />
+
+          <img src="./images/Gamora.jpg" alt="" srcset="" />
+        </div>
+        <div class="grid-column">
+          <img src="./images/green-goblin.jpg" alt="" />
+          <img src="./images/hulk.jpg" alt="" />
+          <img src="./images/iron-man.jpg" alt="" />
+          <img src="./images/rocket.jpg" alt="" srcset="" />
+        </div>
+        <div class="grid-column">
+          <img src="./images/spider-man.jpg" alt="" />
+          <img src="./images/star-lord.jpg" alt="" />
+          <img src="./images/thanos.jpg" alt="" />
+          <img src="./images/thor.jpg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
